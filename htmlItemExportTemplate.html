@@ -1,0 +1,15 @@
+<dt class="Title"><$fields.Title/></span><dt />
+<dd class="Pub">
+	<span class="Author"><$pubAuthorsForDisplay/></span><br />
+	<span class="Booktitle"><$fields.Booktitle/></span>&nbsp;
+	<span class="Journal"><$fields.Journal/></span>&nbsp;  
+	<span class="Volume"><$fields.Volume/></span>&nbsp;
+	(<span class="Date"><$fields.Year/></span>)<br />
+<$localFiles>
+	<span class="File"><a href="papers/<$URL.lastPathComponent/>"><$URL.lastPathComponent/></a></span><br />
+</$localFiles>
+<$remoteURLs>
+	<span class="URL"><a href="<$URL.absoluteString/>" target="_blank"><$URL.absoluteString/></a></span><br />
+</$remoteURLs>
+	<div class="Abstract"><$fields.Abstract/></div>
+<dd />
