@@ -11,54 +11,12 @@
 <link rel="stylesheet" type="text/css" href="proposal.css"> 
 </head><body 
 >
-   <h4 class="likesubsectionHead"><a 
- id="x1-1000"></a><span 
-class="ptmrc7t-x-x-120">P<span 
-class="small-caps">a</span><span 
-class="small-caps">r</span><span 
-class="small-caps">t</span> E &#8211; P<span 
-class="small-caps">r</span><span 
-class="small-caps">o</span><span 
-class="small-caps">j</span><span 
-class="small-caps">e</span><span 
-class="small-caps">c</span><span 
-class="small-caps">t</span> D<span 
-class="small-caps">e</span><span 
-class="small-caps">s</span><span 
-class="small-caps">c</span><span 
-class="small-caps">r</span><span 
-class="small-caps">i</span><span 
-class="small-caps">p</span><span 
-class="small-caps">t</span><span 
-class="small-caps">i</span><span 
-class="small-caps">o</span><span 
-class="small-caps">n</span></span></h4>
-<!--l. 68--><p class="noindent" ><span 
-class="ptmrc7t-x-x-120">E1. P<span 
-class="small-caps">r</span><span 
-class="small-caps">o</span><span 
-class="small-caps">j</span><span 
-class="small-caps">e</span><span 
-class="small-caps">c</span><span 
-class="small-caps">t</span> T<span 
-class="small-caps">i</span><span 
-class="small-caps">t</span><span 
-class="small-caps">l</span><span 
-class="small-caps">e</span>: </span>Scalable Inference for Probabilistic Joint Inversions, Regression, Classification and
-Beyond.
-   <h5 class="likesubsubsectionHead"><a 
- id="x1-2000"></a><span 
-class="ptmrc7t-x-x-120">E2. B<span 
-class="small-caps">a</span><span 
-class="small-caps">c</span><span 
-class="small-caps">k</span><span 
-class="small-caps">g</span><span 
-class="small-caps">r</span><span 
-class="small-caps">o</span><span 
-class="small-caps">u</span><span 
-class="small-caps">n</span><span 
-class="small-caps">d</span></span></h5>
-<!--l. 73--><p class="noindent" >Scientists are often concerned with inversion problems where they wish to reason about the latent input to a
+<h1>Scalable Inference for Probabilistic Joint Inversions, Regression, Classification and
+Beyond</h1>
+
+<h2> Background </h2>
+
+Scientists are often concerned with inversion problems where they wish to reason about the latent input to a
 system given some observations of its output and the system&#8217;s forward model. Similarly, they face predictive
 tasks where, although reasoning about the latent inputs may not be of interest, probabilistic predictions are
 required and it can be useful to incorporate problem-specific knowledge into the inference algorithm, for
@@ -112,7 +70,7 @@ href="#Xranganath2014black">9</a>]</span>) has
 recently been developed for general latent variable models. Due to this generality, it under-utilises the rich
                                                                                             
                                                                                             
-amount of information available in GP models (see more details in Section E4). A clear disadvantage of
+amount of information available in GP models. A clear disadvantage of
 BBVI is that it does not provide an analytical or practical way of learning the covariance hyperparameters of
 GPs. <hr class="figure"><div class="figure" 
 >
@@ -130,12 +88,19 @@ id="TBL-1-2"></colgroup><tr
  style="vertical-align:baseline;" id="TBL-1-1-"><td  style="white-space:nowrap; text-align:center;" id="TBL-1-1-1"  
 class="td11">  </td><td  style="white-space:nowrap; text-align:center;" id="TBL-1-1-2"  
 class="td11">  </td>
-</tr><tr  
- style="vertical-align:baseline;" id="TBL-1-2-"><td  style="white-space:nowrap; text-align:center;" id="TBL-1-2-1"  
-   class="td11">
-   <img src="avi.png" alt="avi" style="width:128px;height:128px">
+</tr>
+<tr style="vertical-align:baseline;" id="TBL-1-2-">
+  <td  style="white-space:nowrap; text-align:center;" id="TBL-1-2-1"  class="td11">
+    <img src="avi.png" alt="avi" style="width:500px;height:350px"></td>
+ <td  style="white-space:nowrap; text-align:center;" id="TBL-1-2-2"  
+     class="td11"><img src="pictorial-inference.png" alt="pictorial inference" style="width:450px;height:350px"></td>
+</tr>
+<tr style="vertical-align:baseline;" id="TBL-1-2-">
+  <td  style="white-space:nowrap; text-align:center;" id="TBL-1-2-1"  class="td11">
    (a)</td><td  style="white-space:nowrap; text-align:center;" id="TBL-1-2-2"  
-class="td11">(b)</td></tr></table>
+     class="td11">(b)</td>
+</tr>
+   </table>
 </div>
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;1:  </span><span  
@@ -157,34 +122,12 @@ multiple latent functions, hence being applicable to settings such as multi-clas
 multi-output regression, and joint inversions. Furthermore, we aim to scale up these algorithms so as to
 deal with a large number of observations, allowing their application to large-scale data fusion
 problems.
-   <h5 class="likesubsubsectionHead"><a 
- id="x1-3000"></a><span 
-class="ptmrc7t-x-x-120">E3. S<span 
-class="small-caps">i</span><span 
-class="small-caps">g</span><span 
-class="small-caps">n</span><span 
-class="small-caps">i</span><span 
-class="small-caps">fi</span><span 
-class="small-caps">c</span><span 
-class="small-caps">a</span><span 
-class="small-caps">n</span><span 
-class="small-caps">c</span><span 
-class="small-caps">e</span> <span 
-class="small-caps">a</span><span 
-class="small-caps">n</span><span 
-class="small-caps">d</span> I<span 
-class="small-caps">n</span><span 
-class="small-caps">n</span><span 
-class="small-caps">o</span><span 
-class="small-caps">v</span><span 
-class="small-caps">a</span><span 
-class="small-caps">t</span><span 
-class="small-caps">i</span><span 
-class="small-caps">o</span><span 
-class="small-caps">n</span></span></h5>
+
+<h2>Significance and Innovation </h2>
+
 <!--l. 171--><p class="noindent" >The research proposed in this project is highly significant across a variety of applications that demand
-uncertainty quantification and propagation, see Section E5 for some examples. Similarly, efficient Bayesian
-inference is an important problem of modern statistical data analysis. As we shall see in Section E5, the
+uncertainty quantification and propagation. Similarly, efficient Bayesian
+inference is an important problem of modern statistical data analysis. The
 anticipated outcomes of this project can be summarised as:
 <ul class="itemize1">
 <li class="itemize"><span 
@@ -240,17 +183,9 @@ stochastic optimisation. We will also investigate very recent advances in stocha
 href="#XSchRouBac2013">10</a>]</span>
 in order to improve the convergence of our learning algorithm.</li></ul>
 <!--l. 221--><p class="noindent" >
-   <h5 class="likesubsubsectionHead"><a 
- id="x1-4000"></a><span 
-class="ptmrc7t-x-x-120">E4. A<span 
-class="small-caps">p</span><span 
-class="small-caps">p</span><span 
-class="small-caps">r</span><span 
-class="small-caps">o</span><span 
-class="small-caps">a</span><span 
-class="small-caps">c</span><span 
-class="small-caps">h</span></span> <a 
- id="x1-4000doc"></a></h5>
+
+<h2> Approach </h2>
+
 <!--l. 222--><p class="noindent" >The aims of this project will be achieved through the development and extension of techniques
 that are sound and have proved successful in uncertainty modelling. In particular, we will use
 Bayesian reasoning to address the problem of quantification and propagation of uncertainty.
@@ -381,23 +316,10 @@ available data on inversion problems, multi-output regression, multi-class class
 count data. We will compare to state-of-the-art stochastic approaches such as MCMC in terms of accuracy of
 the predictions as well as computational cost. We will also compare to hard-coded (problem-specific)
 deterministic posterior inference approaches.
-   <h5 class="likesubsubsectionHead"><a 
- id="x1-5000"></a><span 
-class="ptmrc7t-x-x-120">E5. E<span 
-class="small-caps">x</span><span 
-class="small-caps">p</span><span 
-class="small-caps">e</span><span 
-class="small-caps">c</span><span 
-class="small-caps">t</span><span 
-class="small-caps">e</span><span 
-class="small-caps">d</span> O<span 
-class="small-caps">u</span><span 
-class="small-caps">t</span><span 
-class="small-caps">c</span><span 
-class="small-caps">o</span><span 
-class="small-caps">m</span><span 
-class="small-caps">e</span><span 
-class="small-caps">s</span></span></h5>
+
+<h2> Expected Outcomes </h2>
+
+
 <!--l. 321--><p class="noindent" >Corresponding to the aims of the this project, the expected outcomes are as follows:
 <dl class="enumerate-enumitem"><dt class="enumerate-enumitem">
 </dt><dd 
@@ -430,29 +352,10 @@ aim to change the way many areas of science currently carry out the quantificati
 uncertainty. Our ultimate goal is to reduce the computational time and/or human time involved in the
 process of evaluating uncertainty through MCMC simulations and/or lengthy model-specific
 derivations.
-   <h5 class="likesubsubsectionHead"><a 
- id="x1-6000"></a><span 
-class="ptmrc7t-x-x-120">E6. D<span 
-class="small-caps">e</span><span 
-class="small-caps">s</span><span 
-class="small-caps">c</span><span 
-class="small-caps">r</span><span 
-class="small-caps">i</span><span 
-class="small-caps">p</span><span 
-class="small-caps">t</span><span 
-class="small-caps">i</span><span 
-class="small-caps">o</span><span 
-class="small-caps">n</span> <span 
-class="small-caps">o</span><span 
-class="small-caps">f</span> P<span 
-class="small-caps">e</span><span 
-class="small-caps">r</span><span 
-class="small-caps">s</span><span 
-class="small-caps">o</span><span 
-class="small-caps">n</span><span 
-class="small-caps">n</span><span 
-class="small-caps">e</span><span 
-class="small-caps">l</span></span></h5>
+
+<h2> Description of Personnel </h2>
+
+
 <!--l. 357--><p class="noindent" ><span 
 class="ptmri7t-x-x-120">Chief Investigator</span>. The CI of this project, Dr.&#x00A0;Edwin Bonilla, will take full responsibility for the conduct of
 the research. In particular, he will investigate the techniques proposed, carry out the corresponding analysis
@@ -466,24 +369,14 @@ class="ptmri7t-x-x-120">scalability </span>component of the
 project. <br 
 class="newline" /><br 
 class="newline" /><span 
-class="ptmri7t-x-x-120">Research Assistant</span>. The 50% Research Assistant (RA) will be responsible for collaborating closely with the
+class="ptmri7t-x-x-120">Research Associate</span>. The Research Associate (RA) will be responsible for collaborating closely with the
 CI and for the development of the corresponding algorithms. It is expected that this RA will carry out
 research activities, discussing existing approaches and alternative methods for the proposed research.
-Therefore, as can be seen in Section B1, a level A step 1 academic has been requested for this
-position.
 <!--l. 1--><p class="noindent" >
-   <h5 class="likesubsubsectionHead"><a 
- id="x1-7000"></a><span 
-class="ptmrc7t-x-x-109">E7. R<span 
-class="small-caps">e</span><span 
-class="small-caps">f</span><span 
-class="small-caps">e</span><span 
-class="small-caps">r</span><span 
-class="small-caps">e</span><span 
-class="small-caps">n</span><span 
-class="small-caps">c</span><span 
-class="small-caps">e</span><span 
-class="small-caps">s</span></span></h5>
+
+
+<h2> References </h2>
+
 <!--l. 1--><p class="noindent" >
      <div class="thebibliography">
      <p class="bibitem" ><span class="biblabel">
