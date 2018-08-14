@@ -207,3 +207,5 @@ form {
 high{color : #36C}
 em{font: bold ; color : #36C}
 
+strike {text-decoration:line-through;}
+red {color: rgb(255, 0, 0);}
